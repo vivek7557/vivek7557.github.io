@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vivek Giri — Software Developer</title>
+  <meta name="description" content="Vivek Giri – projects, about and contact" />
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Vivek Giri</h1>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Hi — I'm Vivek</h2>
+        <p>I build things for the web. I’m a developer who likes clean interfaces, simple code, and shipping projects.</p>
+        <p><a class="cta" href="#projects">See my projects</a></p>
+      </div>
+    </section>
+
+    <section id="about" class="container section">
+      <h3>About me</h3>
+      <p>Replace this text with a short bio: who you are, what you do, your tech stack, and what you like building.</p>
+      <ul class="meta">
+        <li><strong>Location:</strong> Your City</li>
+        <li><strong>Work:</strong> Your job / student / open to work</li>
+        <li><strong>Contact:</strong> <a href="mailto:your-email@example.com">your-email@example.com</a></li>
+      </ul>
+    </section>
+
+    <section id="projects" class="container section">
+      <h3>Projects</h3>
+      <div class="grid">
+        <article class="card">
+          <h4>Project One</h4>
+          <p>Short description of a project. Link to repo or demo.</p>
+          <p><a href="#">View project</a></p>
+        </article>
+
+        <article class="card">
+          <h4>Project Two</h4>
+          <p>Short description of a second project.</p>
+          <p><a href="#">View project</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container section">
+      <h3>Contact</h3>
+      <p>If you’d like to reach out, email me at <a href="mailto:your-email@example.com">your-email@example.com</a> or use the form below.</p>
+
+      <!-- Simple form using Formspree (replace with your endpoint or remove) -->
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+        <label>
+          Name
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Vivek Giri — <a href="https://github.com/vivek7557" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
